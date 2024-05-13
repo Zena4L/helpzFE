@@ -5,10 +5,11 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import Logo from "./Logo";
+import ButtonPrimary from "./ButtonPrimary";
 
 const NavBar: React.FC = () => {
   return (
-    <div className=" bg-white border-indigo-200 border-b-2 shadow-md ">
+    <div className=" bg-white border-indigo-200 border-b-2  ">
       <div className="container flex  w-full md:w-auto mx-auto text-center  items-center px-7 py-5">
         <Logo text="HELPz" />
         <ul className="flex gap-4 mx-auto w-[1360px] items-center justify-center">
@@ -87,6 +88,12 @@ const NavBar: React.FC = () => {
 
               <span className="mx-3 text-gray-400">Clement</span>
             </NavLink>
+          </li>
+          <li>
+            <ButtonPrimary text="Signup" path="/signup" />
+          </li>
+          <li>
+            <ButtonPrimary text="Login" path="/login" />
           </li>
         </ul>
       </div>
